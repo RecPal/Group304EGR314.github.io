@@ -3,18 +3,18 @@
     --md-accent-fg-color: #696908;
   }
   
-  /* Make navigation text white */
-  .md-nav__link {
-    color: blue !important;
+  /* Make top navigation tabs white */
+  .md-tabs__link {
+    color: #ffffff !important;
   }
   
-  /* Make active navigation item stand out */
-  .md-nav__link--active {
-    color: var(--md-accent-fg-color) !important;
+  /* Optionally style the active tab differently */
+  .md-tabs__link--active {
     font-weight: bold;
+    color: #ffffff !important;
   }
   
-  /* Make hover state visible */
-  .md-nav__link:hover {
-    color: var(--md-accent-fg-color) !important;
+  /* Style the hover state */
+  .md-tabs__link:hover {
+    color: #ffffff !important;
   }
