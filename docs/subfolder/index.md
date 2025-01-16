@@ -13,8 +13,8 @@ title: This is the index to a subfolder
 <span style = "color : white;">
 
 # Team Organization page [Team Charter Page] 
-+ Charter Statement 
-+ Product Mission Statement
+- Charter Statement 
+- Product Mission Statement
   
 </span>
 
@@ -25,7 +25,7 @@ title: This is the index to a subfolder
 <span style = "color : white;">
 
 # Appendix 
-+ Team organization information (IDK if we need this yet)
+- Team organization information (IDK if we need this yet)
   
 </span>
 
