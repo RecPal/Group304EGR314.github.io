@@ -11,14 +11,11 @@
     --md-default-fg-color--light: #ffffff;
   }
   
-  /* Try to prevent any JS from modifying these styles */
-  .md-nav__link {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
+  :root {
+    --md-primary-fg-color: #6e0a07;  /* Your custom red for the nav bar */
   }
   
-  /* Target the specific table of contents element */
-  .md-header__topic {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
+  /* Target specifically the table of contents text color */
+  .md-nav--primary .md-nav__title {
+    color: white !important;
   }
