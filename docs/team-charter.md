@@ -1,5 +1,5 @@
 ---
-title: Second Page
+title: Team Charter
 ---
 
 Things to discuss
