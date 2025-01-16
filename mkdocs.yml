@@ -6,21 +6,10 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    # Dark mode (listed first to make it default)
+    # Dark mode
     - scheme: slate        # This enables dark mode
       primary: "#6e0a07"
       accent: "#696908"
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: "#6e0a07"
-      accent: "#696908"
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
 
   font:
     text: Roboto
