@@ -10,7 +10,7 @@ tags:
 This is the official website for the Arizona State University EGR314 team 304 project website. The following team members are represented on this webpage
 
 - Dominick Trusko [JOBTITLE]
-- Name2 [JOBTITLE]
+- Adam Quan [JOBTITLE]
 - Name3 [JOBTITLE]
 - Name4 [JOBTITLE]
 
