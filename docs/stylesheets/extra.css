@@ -3,23 +3,21 @@
     --md-accent-fg-color: #696908;
   }
   
-/* Target the tab links more specifically */
-.md-header__topic .md-tabs__link,
-.md-tabs__list .md-tabs__link,
-.md-tabs .md-tabs__link {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* Override any theme transitions */
-.md-tabs__link {
-  transition: none !important;
-  color: #ffffff !important;
-}
-
-/* Ensure hover states maintain white color */
-.md-tabs__link:hover,
-.md-tabs__link:focus,
-.md-tabs__link--active {
-  color: #ffffff !important;
-}
+  .md-nav__link, 
+  .md-nav__link .md-ellipsis {
+    color: #ffffff !important;
+  }
+  
+  .md-sidebar__scrollwrap {
+    color: #ffffff !important;
+  }
+  
+  .md-nav {
+    color: #ffffff !important;
+    font-size: .7rem;
+    line-height: 1.3;
+  }
+  
+  .md-nav__title {
+    color: #ffffff !important;
+  }
