@@ -5,15 +5,16 @@ tags:
 - tag2
 ---
 
-## Et poposcerat rursus ad magnus premit
+## EGR314 [PROJECTNAMEPLACEHOLDER]
 
-Lorem markdownum gradus, qui largis, nec pater pleno: fatum. Adspexit cursus
-cur, aut in adhuc crimina **habebat**: pro.
+This is the official website for the Arizona State University EGR314 team 304 project website. The following team members are represented on this webpage
 
-- Et ducimus
-- Prosecta hinc nix vidi rettulit cum sitim
-- Has in tonitribus tenebrae Romane mirantum resupina
-- Figuras et dextram
+- Dominick Trusko [JOBTITLE]
+- Name2 [JOBTITLE]
+- Name3 [JOBTITLE]
+- Name4 [JOBTITLE]
+
+Prepared for Professor Nichols EGR 314 Spring 2025 course
 
 ## Esse quoque sedem plena nunc iecur
 
