@@ -1,6 +1,6 @@
 site_name: Team304ProjectWebsite
-site_url: https://embedded-systems-design.github.io/template_report
-repo_url: https://github.com/embedded-systems-design/template_report
+site_url: https://github.com/RecPal/Group304EGR314.github.io
+repo_url: https://github.com/RecPal/Group304EGR314.github.io
 edit_uri: edit/main/docs/
 theme:
   name: material
