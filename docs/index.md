@@ -11,7 +11,7 @@ This is the official website for the Arizona State University EGR314 team 304 pr
 
 - Dominick Trusko [JOBTITLE]
 - Adam Quan [JOBTITLE]
-- Name3 [JOBTITLE]
+- Cory Lewis [JOBTITLE]
 - Name4 [JOBTITLE]
 
 Prepared for Professor Nichols EGR 314 Spring 2025 course
