@@ -3,13 +3,18 @@
     --md-accent-fg-color: #696908;
   }
   
-  article a {
-    font-style: italic;
+  /* Make navigation text white */
+  .md-nav__link {
+    color: #ffffff !important;
   }
   
-  blockquote {
-    background: #ffc;
-    p, li {
-      color: var(--md-typeset-color);
-    }
+  /* Make active navigation item stand out */
+  .md-nav__link--active {
+    color: var(--md-accent-fg-color) !important;
+    font-weight: bold;
+  }
+  
+  /* Make hover state visible */
+  .md-nav__link:hover {
+    color: var(--md-accent-fg-color) !important;
   }
