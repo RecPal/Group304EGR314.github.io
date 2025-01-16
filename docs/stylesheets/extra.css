@@ -5,7 +5,7 @@
   
   /* Make navigation text white */
   .md-nav__link {
-    color: #ffffff !important;
+    color: blue !important;
   }
   
   /* Make active navigation item stand out */
