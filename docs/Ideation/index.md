@@ -6,7 +6,7 @@ title: This is the index to a subfolder
 
 # <span style="color: red">*Friday 1/17/2025*</span>
 
-## Are listed here, please complete at your convenience
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/K2Sln-ReN9U/0.jpg)](https://www.youtube.com/watch?v=K2Sln-ReN9U)
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px; background-color:rgb(102, 10, 4);">
 <span style = "color : white;">
