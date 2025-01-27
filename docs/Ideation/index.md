@@ -2,9 +2,9 @@
 title: This is the index to a subfolder
 ---
 
-# Things to be done before
+# What is the goal of our exhibit?
 
-# <span style="color: red">*Friday 1/17/2025*</span>
+# <span style="color: red">*Our goal is to create an exhibit that demonstrates the basic mechanics behind heavier-than-air flight using small-scale wind tunnel that includes multiple adjustable variables, simulating various flight conditions.*</span>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/K2Sln-ReN9U/0.jpg)](https://www.youtube.com/watch?v=K2Sln-ReN9U)
 
