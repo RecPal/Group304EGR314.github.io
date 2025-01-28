@@ -40,38 +40,5 @@ title: This is the index to a subfolder
 
    Cory can ensure the seamless integration of all components, They will document the process and troubleshooting issues. Additionally, they can manage the reset functionality to maintain the exhibit’s usability and safety for all visitors.
 
-
-<div style="border: 1px solid black; padding: 10px; margin: 10px; background-color:rgb(102, 10, 4);">
-<span style = "color : white;">
-
-  
-</span>
-</div>
-
-<div style="border: 1px solid black; padding: 10px; margin: 10px; background-color:rgb(109, 117, 36);">
-<span style = "color : white;">
-
-# Appendix
-- Team organization information (IDK if we need this yet)
-  
-</span>
-</div>
-
-
-# <span style= "color: red">*Friday 1/24/2025*</span>
-
-
-
-<div style="border: 1px solid black; padding: 10px; margin: 10px; background-color:rgb(102, 10, 4);">
-<span style = "color : white;">
-
-# Ideation & Concept generation
-- Background reading
-- Learn about science exhibits
-- Generate ideas
-- Sort rank & group
-- Create concept sketches
-- Presentation
-
 </span>
 </div>
