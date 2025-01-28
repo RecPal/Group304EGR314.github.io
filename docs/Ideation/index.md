@@ -12,7 +12,7 @@ title: This is the index to a subfolder
 # Phases of our Brainstorm 
 ![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/RecPal/Group304EGR314.github.io/refs/heads/main/media/OrganizedIdeation.drawio.png)
 
-![IMAGE ALT TEXT HERE]()
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/RecPal/Group304EGR314.github.io/refs/heads/main/media/Ideation.drawio.png)
 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/K2Sln-ReN9U/0.jpg)](https://www.youtube.com/watch?v=K2Sln-ReN9U)
