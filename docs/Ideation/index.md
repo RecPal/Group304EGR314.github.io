@@ -22,7 +22,7 @@ title: This is the index to a subfolder
 
 *The interactive wind tunnel exhibit is tailored to provide an engaging and educational experience for museum visitors, particularly 5th–8th grade students. The exhibit bridges theoretical learning with practical application by demonstrating the mechanics of heavier-than-air flight, offering an introduction or reinforcement of classroom topics. Adjustable variables allow visitors to explore different flight conditions, making the exhibit dynamic and appealing. Additionally, the design ensures accessibility for a wide audience, thanks to its user-friendly interface, and minimizes disruption by incorporating resettable features to prevent interference from previous users. These considerations make the exhibit both intuitive and impactful for visitors.*
 
-## How the functionality will be split across four teammates**
+## How the functionality will be split across four teammates
 
 1. Internet-Based Two-Way Communication (Dominick)
 
