@@ -9,6 +9,11 @@ title: This is the index to a subfolder
 # Who is our audience?
 ## <span style="color: red">*Our target audience is 5th-8th grade students, since most students are taught the basic principles behind flight during those grades. Our exhibit will serve as a demonstration of what the students learned in class or as an introduction to something they will learn soon.*</span>
 
+# Phases of our Brainstorm 
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/RecPal/Group304EGR314.github.io/refs/heads/main/media/OrganizedIdeation.drawio.png)
+
+![IMAGE ALT TEXT HERE]()
+
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/K2Sln-ReN9U/0.jpg)](https://www.youtube.com/watch?v=K2Sln-ReN9U)
 
