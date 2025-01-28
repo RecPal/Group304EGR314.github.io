@@ -38,4 +38,4 @@ title: This is the index to a subfolder
 
 4. Overall Exhibit Coordination and Documentation (Cory)
 
-   Cory can ensure the seamless integration of all components, They will document the process and troubleshooting issues. Additionally, they can manage the reset functionality to maintain the exhibit’s usability and safety for all visitors.
+   Cory can ensure the seamless integration of all components, They will document the process and troubleshooting issues. Additionally, they can manage the reset functionality to maintain the exhibits usability and safety for all visitors.
