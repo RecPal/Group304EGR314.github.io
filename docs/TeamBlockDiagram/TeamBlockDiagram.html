@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-align:left; padding-left:20px; font-size:80px;">Windsoar: Block Diagrams</h1>
+        <!-- Engineering Nav -->
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Project Information</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Goals</a></li>
+                        <li><a href="#">Requirements</a></li>
+                        <li><a href="#">Project Pitch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Hardware Design</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Block Diagrams</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Software Design</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Block Diagrams</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+                <li class="right-align"><a href="Contact.html">Team Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <contentHead> Team Block Diagrams </contentHead>
+
+    <contentParagraph>
+        Our team's block diagram demonstrates all four of our selected subsystems, including their
+        hardware requirements. This document is subject to change as the difficulties of our Design
+        begin to show themselves. This includes our hardware diagrams, as well as our communication
+        protocols and intersystem communication pinouts.
+
+        <div style="text-align: right; padding: 5px;"> Last Updated : <span id="last-updated"></span></span> </div>
+    </contentParagraph>
+
+    
+
+    <div class="dropdown-container" id="hardwareBlock">
+
+        <div class="dropdownContent" onclick="toggleTable('hardware')">&dArr; Hardware Block Diagram &dArr;</div>
+
+        <div id="hardware" class="hiddenContent">
+
+            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+
+                <img src="../Media/BlockDiagram/TeamBlockDiagram.png" alt="BlockDiagramImage" class="centerImage">
+        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="dropdown-container" id="CommDiagram">
+
+        <div class="dropdownContent" onclick="toggleTable('Comm')">&dArr; Sequence Diagram &dArr;</div>
+
+        <div id="Comm" class="hiddenContent">
+
+            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+
+                <img src="../Media/BlockDiagram/CommDiagram.png" alt="BlockDiagramImage" class="centerImage">
+        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="dropdown-container" id="commInterfaceCont">
+
+        <div class="dropdownContent" onclick="toggleTable('commInterface')">&dArr; Communication Interface &dArr;</div>
+
+        <div id="commInterface" class="hiddenContent">
+
+            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+
+                <img src="../Media/BlockDiagram/CommFlow.png" alt="BlockDiagramImage" class="centerImage">
+        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="dropdown-container" id="MessCont">
+
+        <div class="dropdownContent" onclick="toggleTable('messageContent')">&dArr; Message Format &dArr;</div>
+
+        <div id="messageContent" class="hiddenContent">
+
+            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px; flex-direction: column;">
+                <h3>
+                    Due to the minimal needs of the intercommunication aspect of the project. Minimizing message length allows us to send smaller
+                    messages over longer periods of time. Due to our project being rather large, it will allow us to a run a far slower communication
+                    clock than a high-speed transfer design. This will reduce the effect that electrical noise will have on our system, while making 
+                    the need of checksum or parity messages irrelevant. We use a header and footer to indicate the start and end of a message, as well
+                    as a recipient tag (Identifier for controller, if not needed by the recipient it will be forwarded to the next device). 
+
+                </h3>
+                
+
+                <spacing></spacing>
+
+                <img src="../Media/BlockDiagram/MessageFormat.png" alt="BlockDiagramImage" class="centerImage">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // Get the last modified date
+    let lastModified = new Date(document.lastModified);
+
+    // Format it to YYYY-MM-DD or any preferred format
+    let formattedDate = lastModified.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+
+    // Insert the formatted date into the page
+    document.getElementById("last-updated").textContent = formattedDate;
+
+    function toggleTable(tableId) {
+            var table = document.getElementById(tableId);
+            table.classList.toggle("showContent");
+        }
+</script>
