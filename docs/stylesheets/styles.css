@@ -67,6 +67,16 @@ contentParagraph {
   flex-direction: column;
 }
 
+.title-link {
+  text-decoration: none;
+  color: white !important; 
+  transition: color 0.3s ease;
+}
+
+.title-link:hover {
+  color: rgb(178, 203, 250) !important;
+}
+
 spacing {
   min-height: 10px;
 }
