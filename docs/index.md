@@ -15,3 +15,6 @@ This is the official website for the Arizona State University EGR314 team 304 pr
 - Emerson Wall - Meeting recorder
 
 Prepared for Professor Nichols EGR 314 Spring 2025 course
+
+Block Diagram
+[text](TeamBlockDiagram/TeamBlockDiagram.html)
