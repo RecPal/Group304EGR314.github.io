@@ -56,12 +56,13 @@ contentParagraph {
   font-weight: bold;
 }
 
-centerImage {
-  width: 90%;
+.centerImage {
+  max-width: 100%;
+  transform: scale(0.9);
+  transform-origin: top;
   height: auto; /* Keeps original aspect ratio */
   margin: 0 auto;
-  display: block;
-  background-color: white;
+  display: inline-block;
   object-fit: contain; /* Ensures full image is visible */
   flex-direction: column;
 }
@@ -100,7 +101,7 @@ spacing {
 }
 
 .showContent {
-  max-height: 4000px;
+  max-height: 2900px;
 }
 
 /* ------------------------------
