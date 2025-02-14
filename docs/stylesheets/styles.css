@@ -56,6 +56,32 @@ contentParagraph {
   font-weight: bold;
 }
 
+th {
+  font-size: 40px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+td {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-style: ridge;
+  border-width: 1px;
+  background-color: rgb(249, 255, 193);
+  border-color: black;
+  border-collapse: collapse;
+}
+
+.td-alt {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-width: 1px;
+  background-color: rgb(196, 196, 255) !important; 
+}
+
 .centerImage {
   max-width: 100%;
   transform: scale(0.9);
