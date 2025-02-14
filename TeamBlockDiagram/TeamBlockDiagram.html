@@ -11,8 +11,8 @@
 <body>
 
     <header>
-        
-        <h1 style="text-align:left; padding-left:20px; font-size:80px;" >
+
+        <h1 style="text-align:left; padding-left:20px; font-size:80px;">
             <a href="../index.html" class="title-link">
                 Windsoar: Block Diagram
             </a>
@@ -59,7 +59,7 @@
         <div style="text-align: right; padding: 5px;"> Last Updated : <span id="last-updated"></span></span> </div>
     </contentParagraph>
 
-    
+
 
     <div class="dropdown-container" id="hardwareBlock">
 
@@ -67,10 +67,11 @@
 
         <div id="hardware" class="hiddenContent">
 
-            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+            <div
+                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
 
                 <img src="../Media/BlockDiagram/TeamBlockDiagram.png" alt="BlockDiagramImage" class="centerImage">
-        
+
             </div>
 
         </div>
@@ -82,10 +83,11 @@
 
         <div id="Comm" class="hiddenContent">
 
-            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+            <div
+                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
 
                 <img src="../Media/BlockDiagram/CommDiagram.png" alt="BlockDiagramImage" class="centerImage">
-        
+
             </div>
 
         </div>
@@ -97,10 +99,11 @@
 
         <div id="commInterface" class="hiddenContent">
 
-            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+            <div
+                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
 
                 <img src="../Media/BlockDiagram/CommFlow.png" alt="BlockDiagramImage" class="centerImage">
-        
+
             </div>
 
         </div>
@@ -112,22 +115,58 @@
 
         <div id="messageContent" class="hiddenContent">
 
-            <div style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px; flex-direction: column;">
-                <h3>
-                    Due to the minimal needs of the intercommunication aspect of the project. Minimizing message length allows us to send smaller
-                    messages over longer periods of time. Due to our project being rather large, it will allow us to a run a far slower communication
-                    clock than a high-speed transfer design. This will reduce the effect that electrical noise will have on our system, while making 
-                    the need of checksum or parity messages irrelevant. We use a header and footer to indicate the start and end of a message, as well
-                    as a recipient tag (Identifier for controller, if not needed by the recipient it will be forwarded to the next device). 
+            <div
+                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px; flex-direction: column;">
+                <h3 class="contentParagraph">
+                    Due to the minimal needs of the intercommunication aspect of the project. Minimizing message length
+                    allows us to send smaller
+                    messages over longer periods of time. Due to our project being rather large, it will allow us to a
+                    run a far slower communication
+                    clock than a high-speed transfer design. This will reduce the effect that electrical noise will have
+                    on our system, while making
+                    the need of checksum or parity messages irrelevant. We use a header and footer to indicate the start
+                    and end of a message, as well
+                    as a recipient tag (Identifier for controller, if not needed by the recipient it will be forwarded
+                    to the next device).
 
                 </h3>
-                
+
 
                 <spacing></spacing>
 
-                <img src="../Media/BlockDiagram/MessageFormat.png" alt="BlockDiagramImage" class="centerImage">
-                
+                <img src="../Media/BlockDiagram/MessageFormat.png" alt="BlockDiagramImage" class="centerImage"
+                    style="transform: scale(1.3); padding-bottom: 20px;">
 
+                <table style="border-color: black !important;">
+                    <thead>
+                        <tr>
+                            <th>Byte</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody style="color:white; ">
+                        <tr>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">1</td>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">Header (Indicates start of transmission)</td>
+                        </tr>
+                        <tr>
+                            <td class="td-alt" style="background-color: green !important;">2</td>
+                            <td class="td-alt" style="background-color: green !important;">Recipient ID (Intended recipient of information)</td>
+                        </tr>
+                        <tr>
+                            <td Style="background-color: rgb(177, 75, 44) !important;">3</td>
+                            <td Style="background-color: rgb(177, 75, 44) !important;">Origin ID (Who sent the message)</td>
+                        </tr>
+                        <tr>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;" >4</td>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message start flag (Indicates data follows)</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: gray;">5</td>
+                            <td style="background-color: gray;">Data</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
@@ -152,7 +191,7 @@
     document.getElementById("last-updated").textContent = formattedDate;
 
     function toggleTable(tableId) {
-            var table = document.getElementById(tableId);
-            table.classList.toggle("showContent");
-        }
+        var table = document.getElementById(tableId);
+        table.classList.toggle("showContent");
+    }
 </script>
