@@ -117,7 +117,7 @@
 
             <div
                 style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px; flex-direction: column;">
-                <h3 class="contentParagraph">
+                <h3 class="contentParagraph" style="background-color: white; padding: 10px; border-radius: 5px; font-size: 20px;">
                     Due to the minimal needs of the intercommunication aspect of the project. Minimizing message length
                     allows us to send smaller
                     messages over longer periods of time. Due to our project being rather large, it will allow us to a
@@ -134,8 +134,8 @@
 
                 <spacing></spacing>
 
-                <img src="../Media/BlockDiagram/MessageFormat.png" alt="BlockDiagramImage" class="centerImage"
-                    style="transform: scale(1.3); padding-bottom: 20px;">
+                <img src="../Media/BlockDiagram/Messagestructure.png" alt="BlockDiagramImage" class="centerImage"
+                    style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 10px; border-radius: 20px;">
 
                 <table style="border-color: black !important;">
                     <thead>
@@ -147,10 +147,10 @@
                     <tbody style="color:white; ">
                         <tr>
                             <td Style="background-color: rgb(64, 64, 243) !important;">1</td>
-                            <td Style="background-color: rgb(64, 64, 243) !important;">Header (Indicates start of transmission)</td>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">Header (Indicates start of transmission) [Fixed Value 0x11]</td>
                         </tr>
                         <tr>
-                            <td class="td-alt" style="background-color: green !important;">2</td>
+                            <td class="td-alt" style="background-color: hwb(120 0% 50%) !important;">2</td>
                             <td class="td-alt" style="background-color: green !important;">Recipient ID (Intended recipient of information)</td>
                         </tr>
                         <tr>
@@ -162,8 +162,76 @@
                             <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message start flag (Indicates data follows)</td>
                         </tr>
                         <tr>
-                            <td style="background-color: gray;">5</td>
-                            <td style="background-color: gray;">Data</td>
+                            <td style="background-color: rgb(92, 92, 92);">5</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">6</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">7</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">8</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">9</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">10</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">11</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">12</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">13</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">14</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">15</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">16</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">17</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">18</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">19</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(92, 92, 92);">20</td>
+                            <td style="background-color: rgb(92, 92, 92);">Data</td>
+                        </tr>
+                        <tr>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;" >21</td>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message end flag (Indicates data termination)</td>
+                        </tr>
+                        <tr>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">22</td>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">Footer (Indicates end of transmission) [Fixed Value 0x13]</td>
                         </tr>
                     </tbody>
                 </table>
