@@ -20,7 +20,7 @@ header {
   text-align: center;
   letter-spacing: 2px;
   background-attachment: fixed;
-  max-height: 221px;
+  max-height: 219px;
   white-space: nowrap;
 }
 
@@ -126,6 +126,11 @@ spacing {
   padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.dropdownContent:hover {
+  color: rgb(6, 72, 129);
+  background-color: rgb(237, 242, 253);
 }
 
 /* Dropdown hidden styling */
