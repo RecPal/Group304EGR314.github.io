@@ -184,6 +184,10 @@ header nav>ul>li:hover>a {
   margin-left: auto;
 }
 
+.cancel-pointer {
+  pointer-events: none;
+  background-color: rgb(78,75,124);
+}
 /* ------------------------------
      DROPDOWN NAV
      ------------------------------ */
