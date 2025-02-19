@@ -51,7 +51,7 @@ contentParagraph {
   margin: 25px;
   margin-top: 5px;
   word-spacing: 1px;
-  line-height: 35px;
+  line-height: 28px;
   font-weight: bold;
 }
 
@@ -71,6 +71,11 @@ td {
   background-color: rgb(249, 255, 193);
   border-color: black;
   border-collapse: collapse;
+}
+
+.close-Space {
+  line-height: 22px !important;
+  margin-top: 3px;
 }
 
 .td-alt {
