@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ideation</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 style="text-align:left; padding-left:20px; font-size:80px;">
+            <a href="../index.html" class="title-link">
+                Windsoar: Block Diagram
+            </a>
+        </h1>
+
+        <!-- Engineering Nav -->
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Project Information</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Project Ideation</a></li>
+                        <li><a href="#">Requirements</a></li>
+                        <li><a href="#">Project Pitch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Hardware Design</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../TeamBlockDiagram/TeamBlockDiagram.html">Block Diagrams</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Software Design</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Block Diagrams</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+                <li class="right-align"><a href="Contact.html">Team Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <contentHead> Team Ideation </contentHead>
+
+    <contentParagraph>
+        When chosing our team's project we looked at various different options.
+        Our priorities were twofold, ease of manufacturing as well as prioritizing educational
+        benefit. It was critically important to our team that we develop a fun and engaging platform
+        for students, while not overscoping to the point that we cannot make meaningful progress.
+
+        <div style="text-align: right; padding: 5px;"> Last Updated : <span id="last-updated"></span></span> </div>
+    </contentParagraph>
+
+    <div class="dropdown-container" id="hardwareBlock">
+
+        <div class="dropdownContent" onclick="toggleTable('hardware')">&dArr; Brainstorming &dArr;</div>
+
+        <div id="hardware" class="hiddenContent">
+            
+            <div
+                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+
+                <contentParagraph>
+                    Our initial thought process was to just try to get as many ideas down on paper as possible.
+
+                    <p></p>
+    
+                    In it's initial state, we decided on categorizing our ideas exclusively based on who came up with them.
+                    It ensured we had equal representation from all group members, and let everyone come up with ideas independent 
+                    of the influence of others. Once all ideas were compiled, we would go forward categorizing them into useful identifiers.
+                </contentParagraph>
+
+                <img src="../Media/Ideation/Brainstorm.png" alt="BlockDiagramImage" class="centerImage" style="margin: 0px;">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // Get the last modified date
+    let lastModified = new Date(document.lastModified);
+
+    // Format it to YYYY-MM-DD or any preferred format
+    let formattedDate = lastModified.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+
+    // Insert the formatted date into the page
+    document.getElementById("last-updated").textContent = formattedDate;
+
+    function toggleTable(tableId) {
+        var table = document.getElementById(tableId);
+        table.classList.toggle("showContent");
+    }
+</script>
