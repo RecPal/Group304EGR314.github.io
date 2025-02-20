@@ -15,14 +15,15 @@
             padding: 20px;
             border-radius: 5px;
 
-            max-width: 95%;
-            justify-content: center;
-            margin: auto;
+            max-width: 47%;
+            justify-content:left;
+            margin: 0.2%;
             margin-top: 15px;
 
             border-style: solid;
             border-width: 5px;
             border-color: gray;
+            min-width:44%;
         }
 
         spacing {
@@ -37,12 +38,12 @@
             border-radius: 10px;
             border-color: black;
             border-width: 5px;
-            border-style:solid;
+            border-style: solid;
         }
-        
-        member-text-container{
+
+        member-text-container {
             background-color: white;
-            display:flex; 
+            display: flex;
             flex-direction: row;
         }
 
@@ -55,17 +56,17 @@
             flex-direction: row;
             display: flex;
             border-radius: 10px;
-            margin:20px;
+            margin: 20px;
         }
 
         .headshot-image {
             align-items: flex-start;
             width: 30%;
-            height: auto;
+            height:40%px;
             border-radius: 10px;
             border-color: black;
             border-width: 5px;
-            border-style:solid;
+            border-style: solid;
         }
 
         .member-text {
@@ -88,15 +89,15 @@
             max-width: 70%;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.914);
-            margin:auto;
+            margin: auto;
             margin-top: 5px;
-            margin-bottom:5px;
+            margin-bottom: 5px;
             border-radius: 7px;
-            width:65%;
+            width: 65%;
             justify-items: center;
             border-color: black;
             border-width: 5px;
-            border-style:solid;
+            border-style: solid;
         }
 
         project-role {
@@ -158,123 +159,131 @@
         Team Information
     </contentHead>
 
-    <member-panel>
+    <div style=" display:flex; flex-direction: row; justify-content:center;">
+        <member-panel>
 
-        <member-header>
-            <p class="member-name">
-                Dominick Trusko
-            </p>
-            <project-role>
-                Team Leader
-            </project-role>
-        </member-header>
+            <member-header>
+                <p class="member-name">
+                    Dominick Trusko
+                </p>
+                <project-role>
+                    Team Leader
+                </project-role>
+            </member-header>
 
-        <spacing></spacing>
+            <spacing></spacing>
 
-        <div style="display:flex; flex-direction: row;">
-            <img src="../Media/TeamInformation/Dominick.jpg" alt="" class="headshot-image">
+            <div style="display:flex; flex-direction: row;">
+                <img src="../Media/TeamInformation/Dominick.jpg" alt="" class="headshot-image">
 
-            <div class="member-information-container">
-                <p class="member-text-head"> Education</p>
-                <p class="member-text">[Enrolled] B.S. Electrical Systems Engineering</p>
-                <p class="member-text">[Seeking] M.S. Manufacturing Engineering</p>
+                <div class="member-information-container">
+                    <p class="member-text-head"> Education</p>
+                    <p class="member-text">[Enrolled] B.S. Electrical Systems Engineering</p>
+                    <p class="member-text">[Seeking] M.S. Manufacturing Engineering</p>
 
-                <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
-                <p class="member-text">Aircraft control</p>
-                <p class="member-text">Wifi Reporting</p>
-                <p class="member-text"></p>
+                    <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
+                    <p class="member-text">Aircraft control</p>
+                    <p class="member-text">Wifi Reporting</p>
+                    <p class="member-text"></p>
+                </div>
+
             </div>
 
-        </div>
+        </member-panel>
+        <member-panel>
 
-    </member-panel>
+            <member-header>
+                <p class="member-name">
+                    Joe Biden Guitar
+                </p>
+                <project-role>
+                    Johnny Guitar
+                </project-role>
+            </member-header>
 
-    <member-panel>
+            <spacing></spacing>
 
-        <member-header>
-            <p class="member-name">
-                Joe Biden Guitar
-            </p>
-            <project-role>
-                Head Guitar Connoisseur
-            </project-role>
-        </member-header>
+            <div style="display:flex; flex-direction: row;">
+                <img src="../Media/TeamInformation/JoeBidenGuitarCrop.png" alt="" class="headshot-image">
 
-        <spacing></spacing>
+                <div class="member-information-container">
+                    <p class="member-text-head"> Education</p>
+                    <p class="member-text">[Enrolled] B.S. Electrical Systems Engineering</p>
+                    <p class="member-text">[Seeking] M.S. Manufacturing Engineering</p>
 
-        <div style="display:flex; flex-direction: row;">
-            <img src="../Media/TeamInformation/JoeBidenGuitarCrop.png" alt="" class="headshot-image">
+                    <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
+                    <p class="member-text">Aircraft control</p>
+                    <p class="member-text">Wifi Reporting</p>
+                    <p class="member-text"></p>
+                </div>
 
-            <div class="member-information-container">
-                <p class="member-text-head"> Education</p>
-                <p class="member-text">[Enrolled] joe bi</p>
-                <p class="member-text">[Enrolled] den</p>
-
-                <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
-                <p class="member-text">gitar</p>
             </div>
 
-        </div>
+        </member-panel>
+    </div>
+    <div style=" display:flex; flex-direction: row; justify-content:center;">
+        <member-panel>
 
-    </member-panel>
+            <member-header>
+                <p class="member-name">
+                    Joe Biden Guitar
+                </p>
+                <project-role>
+                    Johnny Guitar
+                </project-role>
+            </member-header>
 
-    <member-panel>
+            <spacing></spacing>
 
-        <member-header>
-            <p class="member-name">
-                Joe Biden Guitar
-            </p>
-            <project-role>
-                Head Guitar Connoisseur
-            </project-role>
-        </member-header>
+            <div style="display:flex; flex-direction: row;">
+                <img src="../Media/TeamInformation/JoeBidenGuitarCrop.png" alt="" class="headshot-image">
 
-        <spacing></spacing>
+                <div class="member-information-container">
+                    <p class="member-text-head"> Education</p>
+                    <p class="member-text">[Enrolled] B.S. Electrical Systems Engineering</p>
+                    <p class="member-text">[Seeking] M.S. Manufacturing Engineering</p>
 
-        <div style="display:flex; flex-direction: row;">
-            <img src="../Media/TeamInformation/JoeBidenGuitarCrop.png" alt="" class="headshot-image">
+                    <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
+                    <p class="member-text">Aircraft control</p>
+                    <p class="member-text">Wifi Reporting</p>
+                    <p class="member-text"></p>
+                </div>
 
-            <div class="member-information-container">
-                <p class="member-text-head"> Education</p>
-                <p class="member-text">[Enrolled] joe bi</p>
-                <p class="member-text">[Enrolled] den</p>
-
-                <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
-                <p class="member-text">gitar</p>
             </div>
 
-        </div>
+        </member-panel>
+        <member-panel>
 
-    </member-panel>
+            <member-header>
+                <p class="member-name">
+                    Joe Biden Guitar
+                </p>
+                <project-role>
+                    Johnny Guitar
+                </project-role>
+            </member-header>
 
-    <member-panel>
+            <spacing></spacing>
 
-        <member-header>
-            <p class="member-name">
-                Joe Biden Guitar
-            </p>
-            <project-role>
-                Head Guitar Connoisseur
-            </project-role>
-        </member-header>
+            <div style="display:flex; flex-direction: row;">
+                <img src="../Media/TeamInformation/JoeBidenGuitarCrop.png" alt="" class="headshot-image">
 
-        <spacing></spacing>
+                <div class="member-information-container">
+                    <p class="member-text-head"> Education</p>
+                    <p class="member-text">[Enrolled] B.S. Electrical Systems Engineering</p>
+                    <p class="member-text">[Seeking] M.S. Manufacturing Engineering</p>
 
-        <div style="display:flex; flex-direction: row;">
-            <img src="../Media/TeamInformation/JoeBidenGuitarCrop.png" alt="" class="headshot-image">
+                    <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
+                    <p class="member-text">Aircraft control</p>
+                    <p class="member-text">Wifi Reporting</p>
+                    <p class="member-text"></p>
+                </div>
 
-            <div class="member-information-container">
-                <p class="member-text-head"> Education</p>
-                <p class="member-text">[Enrolled] joe bi</p>
-                <p class="member-text">[Enrolled] den</p>
-
-                <p class="member-text-head" style="margin-top: 15px"> Subsystems</p>
-                <p class="member-text">gitar</p>
             </div>
 
-        </div>
-
-    </member-panel>
+        </member-panel>
+    </div>
+    
 </body>
 
 </html>
