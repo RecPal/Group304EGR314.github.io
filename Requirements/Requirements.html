@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Block Diagram</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 style="text-align:left; padding-left:20px; font-size:80px;">
+            <a href="../index.html" class="title-link">
+                Windsoar: Block Diagram
+            </a>
+        </h1>
+
+        <!-- Engineering Nav -->
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Project Information</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../Ideation/TeamIdeation.html">Project Ideation</a></li>
+                        <li><a href="#" class="cancel-pointer">Requirements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Hardware Design</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../TeamBlockDiagram/TeamBlockDiagram.html">Block Diagrams</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Software Design</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Block Diagrams</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+                <li class="right-align"><a href="../TeamInformation/TeamInformation.html">Team Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <contentHead> Project Requirements </contentHead>
+
+    <div style="margin:0px;">
+        <contentParagraph>
+
+            <b style="font-size:30px;">
+                Project Summary
+            </b>
+
+            <p>
+                This semester we are interested in developing projects based on standards and modularity. The course
+                theme
+                this semester is a STEM-themed display that demonstrates a single scientific/engineering concept in an
+                interactive, web-enabled, physical device. This could include displays such as:
+
+            <div class="content-list" style="width:100%; padding-bottom: 25px;">
+                <li>The Bernoulli Effect</li>
+                <li>Self-balancing Inverted Pendulum</li>
+                <li>A line following robot</li>
+                <li>...</li>
+            </div>
+
+            The intended user is, thus, K-12 students interested in learning about science, technology, engineering, or
+            math.
+            </p>
+        </contentParagraph>
+
+        <contentParagraph>
+            <b style="font-size:30px;">
+                Project Requirements
+            </b>
+            <p>
+                Our team's project requirements come from two different sources.
+
+            <div class="content-list">
+                <li>
+                    Course-Imposed requirements (Requirements from the class)
+                </li>
+                <li>
+                    Hardware-Imposed requirements (Requirements due to hardware selection)
+                </li>
+            </div>
+            </p>
+        </contentParagraph>
+
+    </div>
+
+
+
+
+    <div style="display:flex; flex-direction: row; max-width:97%; margin:auto;">
+        <contentParagraph style="width:100%; margin:5px;">
+            <p class=" small-content-header">
+                Course-Imposed Restrictions
+            <p>
+
+            <p class="small-content-text">
+                The project have specified requirements by the teaching team, they are as follows.
+            <div class="content-list">
+                <li>
+                    <b>Microcontroller:</b> Must use an Espressif ESP32 or a Microchip PIC16F/PIC18F
+                </li>
+                <li>
+                    <b>Power:</b> Must use a 3.3V switching regulator, powered from a 120v -> 9v power supply
+                </li>
+                <li>
+                    <b>In-Circuit Programmer:</b> Either a USB for the ESP32, or all supporting hardware for ICSP for
+                    PIC microcontrollers
+                </li>
+                <li>
+                    <b>Functionalities: </b> Either features a sensor, actuator, human machine interface, or
+                    bidirectional internet communication.
+                </li>
+                <li>
+                    <b>Communication: </b> Systems must intercommunicate utilizing UART
+                </li>
+            </div>
+
+            </p>
+
+        </contentParagraph>
+        <contentParagraph style="width:100%; margin:5px;">
+            <p class=" small-content-header">
+                Hardware-Imposed Restrictions
+            <p>
+
+            <p class="small-content-text">
+                The project have specified requirements due to the hardware we selected, they are as follows
+            <div class="content-list">
+                <li>
+                    <b>Internet-Connectivity</b> Our device must be able to interface with our website, giving live-data readouts
+                </li>
+                <li>
+                    <b>Power:</b> We additionally require a 24v power supply to drive both the stepper motors and the primary fan
+                </li>
+                <li>
+                    <b>Communication: </b> We will use a global send/recieve system, where addresses and cyclical sending minimize communication traffic
+                </li>
+            </div>
+
+            </p>
+        </contentParagraph>
+    </div>
+
+</body>
