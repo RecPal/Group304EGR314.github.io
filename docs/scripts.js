@@ -50,7 +50,7 @@ document.querySelectorAll(".zoomable-image").forEach(image => {
     });
 });
 
-fetch(`https://recpal.github.io/Group304EGR314.github.io/Taskbar`)
+fetch(`https://recpal.github.io/Group304EGR314.github.io/Taskbar.html`)
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
