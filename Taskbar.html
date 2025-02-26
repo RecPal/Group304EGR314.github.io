@@ -3,13 +3,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Homepage</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <style>
+        /* Header background image, etc. */
+        header {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fd/Atacama_Desert_%28Unsplash%29.jpg");
+            background-position-y: center bottom;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            letter-spacing: 2px;
+            background-attachment: fixed;
+            max-height: clamp(17.5vh, 15vw, 18vh);
+            white-space: nowrap;
+        }
+
+        .header-image {
+            height: clamp(14vh, 0.000001vh, 0.0000001vw);
+            width: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header-bar {
+            text-align: left;
+            padding-left: 2vw;
+            margin: auto;
+        }
+
+        .dropdown-text {
+
+        }
+
+    </style>
 </head>
 
-<body>
+<body style="transform:scale(1.0);">
     <header class="taskbar">
-        <h1 style="text-align:left; padding-left:20px; font-size:80px;" >
+        <h1 class="header-bar" style="text-align:left; padding-left:20px; font-size:80px;">
             <a href="https://recpal.github.io/Group304EGR314.github.io/index.html" class="title-link">
-                <img src="https://recpal.github.io/Group304EGR314.github.io/Media/Windsoar.png" alt="">
+                <img class="header-image" src="https://recpal.github.io/Group304EGR314.github.io/Media/Windsoar.png"
+                    alt="">
             </a>
         </h1>
         <!-- Engineering Nav -->
@@ -18,14 +52,19 @@
                 <li class="dropdown">
                     <a href="#">Project Information</a>
                     <ul class="dropdown-menu">
-                        <li><a href="https://recpal.github.io/Group304EGR314.github.io/Ideation/TeamIdeation.html">Project Ideation</a></li>
-                        <li><a href="https://recpal.github.io/Group304EGR314.github.io/Requirements/Requirements.html">Requirements</a></li>
+                        <li><a href="https://recpal.github.io/Group304EGR314.github.io/Ideation/TeamIdeation.html">Project
+                                Ideation</a></li>
+                        <li><a
+                                href="https://recpal.github.io/Group304EGR314.github.io/Requirements/Requirements.html">Requirements</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#">Hardware Design</a>
                     <ul class="dropdown-menu">
-                        <li><a href="https://recpal.github.io/Group304EGR314.github.io/TeamBlockDiagram/TeamBlockDiagram.html">Block Diagrams</a></li>
+                        <li><a
+                                href="https://recpal.github.io/Group304EGR314.github.io/TeamBlockDiagram/TeamBlockDiagram.html">Block
+                                Diagrams</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -37,7 +76,9 @@
                         <li><a href="https://emwall527.github.io/emwall.github.io/">Emerson Wall</a></li>
                     </ul>
                 </li>
-                <li class="right-align"><a href="https://recpal.github.io/Group304EGR314.github.io/TeamInformation/TeamInformation.html">Team Information</a></li>
+                <li class="right-align"><a
+                        href="https://recpal.github.io/Group304EGR314.github.io/TeamInformation/TeamInformation.html">Team
+                        Information</a></li>
             </ul>
         </nav>
     </header>
