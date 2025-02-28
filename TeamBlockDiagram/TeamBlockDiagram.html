@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Block Diagram</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <style>
+        .message-header {
+            padding: 1vw;
+        }
+
+        .message-content {
+            background-color: rgb(234, 234, 234);
+        }
+
+        .pin-square {
+            width: 1vw;
+            height: 1vw;
+            background-color: rgb(165, 165, 165);
+            border-width: 1vw;
+            border-color: black;
+            border-style:solid;
+        }
+
+        .pin-description {
+            height:1vw;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,7 +88,67 @@
         <div id="commInterface" class="hiddenContent">
 
             <div
-                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px;">
+                style="background-color: rgb(233, 233, 233); width: 95%; display: flex; flex-direction:column; justify-content: center; margin: 1vw auto; padding: 1vw; border-radius: 20px;">
+
+                <h3 class="contentParagraph"
+                    style="background-color: white; padding: 1vw; border-radius: 5px; font-size: 20px;">
+                    Our open communication network circumvents the requirement for separate transmit/receive channels in favor
+                    of a singular, open communication system. Commands are set at fixed intervals, with their timing determined by
+                    the system ready confirmation from the Aircraft pitch controller. Each device has a 0.25 second window per second
+                    to send messages to other devices. All boards are required to send a message, even if the message content is empty,
+                    this is used to determine if any individual system has failed and requires servicing.
+
+                    <div style="padding-bottom:2vw;"></div>
+
+                    Our power will not be transmitted through the header due to the unique requirements of the project, we will be 
+                    using terminal blocks to ensure proper power distribution, without the potential risk of bridging and
+                    damaging our communication network. A shared ground will be utilized, but as all boards will be grounded to the frame and
+                    power supply this more of a backup.
+
+                    <div style="padding-bottom:2vw;"></div>
+
+                    Only a singular pin is required for this system. The class has a requirement for an 8-pin setup, which we still support
+                    headers for. The communication network will still technically be daisy-chained, but cross-pin contacts on the board will
+                    automatically hand messages off without the need of the microcontroller to middle-man communication.
+
+                    <div style="padding-bottom:2vw;"></div>
+
+                    <table style="padding-left:2vw;">
+                        <tr>
+                            <td class="pin-square"> 1 </td>
+                            <td class="pin-description"> N/C </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 2 </td>
+                            <td class="pin-description"> Communication Network </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 3 </td>
+                            <td class="pin-description"> N/C </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 4 </td>
+                            <td class="pin-description"> N/C </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 5 </td>
+                            <td class="pin-description"> N/C </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 6 </td>
+                            <td class="pin-description"> N/C </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 7 </td>
+                            <td class="pin-description"> N/C </td>
+                        </tr>
+                        <tr>
+                            <td class="pin-square"> 8 </td>
+                            <td class="pin-description"> Ground </td>
+                        </tr>
+                    </table>
+
+                </h3>
 
                 <img src="../Media/BlockDiagram/CommFlow.png" alt="BlockDiagramImage" class="centerImage">
 
@@ -81,7 +165,8 @@
 
             <div
                 style="background-color: rgb(233, 233, 233); width: 95%; display: flex; justify-content: center; margin: 10px auto; padding: 20px; border-radius: 20px; flex-direction: column;">
-                <h3 class="contentParagraph" style="background-color: white; padding: 10px; border-radius: 5px; font-size: 20px;">
+                <h3 class="contentParagraph"
+                    style="background-color: white; padding: 10px; border-radius: 5px; font-size: 20px;">
                     Due to the minimal needs of the intercommunication aspect of the project. Minimizing message length
                     allows us to send smaller
                     messages over longer periods of time. Due to our project being rather large, it will allow us to a
@@ -92,7 +177,6 @@
                     and end of a message, as well
                     as a recipient tag (Identifier for controller, if not needed by the recipient it will be forwarded
                     to the next device).
-
                 </h3>
 
 
@@ -111,19 +195,23 @@
                     <tbody style="color:white; ">
                         <tr>
                             <td Style="background-color: rgb(64, 64, 243) !important;">1</td>
-                            <td Style="background-color: rgb(64, 64, 243) !important;">Header (Indicates start of transmission) [Fixed Value 0x11]</td>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">Header (Indicates start of
+                                transmission) [Fixed Value 0x11]</td>
                         </tr>
                         <tr>
                             <td class="td-alt" style="background-color: hwb(120 0% 50%) !important;">2</td>
-                            <td class="td-alt" style="background-color: green !important;">Recipient ID (Intended recipient of information)</td>
+                            <td class="td-alt" style="background-color: green !important;">Recipient ID (Intended
+                                recipient of information)</td>
                         </tr>
                         <tr>
                             <td Style="background-color: rgb(177, 75, 44) !important;">3</td>
-                            <td Style="background-color: rgb(177, 75, 44) !important;">Origin ID (Who sent the message)</td>
+                            <td Style="background-color: rgb(177, 75, 44) !important;">Origin ID (Who sent the message)
+                            </td>
                         </tr>
                         <tr>
-                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;" >4</td>
-                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message start flag (Indicates data follows)</td>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">4</td>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message start
+                                flag (Indicates data follows)</td>
                         </tr>
                         <tr>
                             <td style="background-color: rgb(92, 92, 92);">5</td>
@@ -190,17 +278,195 @@
                             <td style="background-color: rgb(92, 92, 92);">Data</td>
                         </tr>
                         <tr>
-                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;" >21</td>
-                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message end flag (Indicates data termination)</td>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">21</td>
+                            <td class="td-alt" Style="background-color: rgb(143, 33, 119) !important;">Message end flag
+                                (Indicates data termination)</td>
                         </tr>
                         <tr>
                             <td Style="background-color: rgb(64, 64, 243) !important;">22</td>
-                            <td Style="background-color: rgb(64, 64, 243) !important;">Footer (Indicates end of transmission) [Fixed Value 0x13]</td>
+                            <td Style="background-color: rgb(64, 64, 243) !important;">Footer (Indicates end of
+                                transmission) [Fixed Value 0x13]</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
 
+                <h3 class="contentParagraph"
+                    style="background-color: white; padding: 1.5vw; border-radius: 5px; font-size: 20px; display:flex; flex-direction: column;">
+                    <p style="font-size:150%; margin-top:0px;">
+                        Message Types
+                    </p>
+                    We have various message types that need to be transmitted through this standard. The nature of the
+                    header/footer system allows for dynamic message sizes. The types of messages
+                    and lengths are listed below.
+
+                    <div style="padding-bottom: 1vh;"></div>
+
+                    All messages are also recieved by the wifi system for live-display to the operator via the
+                    web-interface. All messages can also be spoofed by the web-interface to overwrite command inputs by
+                    the user
+
+                    <div style="padding-bottom: 2vw;"></div>
+
+                    <div style="padding: auto; align-content:center;">
+                        <table>
+                            <thead>
+                                <div>
+                                    <th class="message-header"> Message Name </th>
+                                    <th class="message-header"> Data type </th>
+                                    <th class="message-header"> Data </th>
+                                    <th class="message-header"> Size </th>
+                                    <th class="message-header"> Sender </th>
+                                    <th class="message-header"> Recipient </th>
+                                    <th class="message-header"> Contents </th>
+                                </div>
+
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="message-content"> Target Rotation </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> [0-90] </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> HMI </td>
+                                    <td class="message-content"> Pitch Controller </td>
+                                    <td class="message-content"> Reports what angle the aircraft should seek </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Fan Speed Target </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> [0-255] </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> HMI </td>
+                                    <td class="message-content"> Fan Speed Controller </td>
+                                    <td class="message-content"> Reports target airspeed to the fan controller </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> True Airspeed </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> [0-255] </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Data Display </td>
+                                    <td class="message-content"> Fan Speed Controller </td>
+                                    <td class="message-content"> Reports true airspeed to fan controller </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Ready </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> 0x66 </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> All Devices </td>
+                                    <td class="message-content"> Wifi System </td>
+                                    <td class="message-content"> Indicates that the individual board has completed it's
+                                        startup procedure
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Reset System </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> 0xAE </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Wifi System </td>
+                                    <td class="message-content"> All Devices </td>
+                                    <td class="message-content"> Commands all systems to clear their data and return to
+                                        starting conditions
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Emergency Stop </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> 0x99 </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Wifi System </td>
+                                    <td class="message-content"> All Devices </td>
+                                    <td class="message-content"> Orders all hardware to immediately cease function </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </h3>
+                <h3 class="contentParagraph"
+                    style="background-color: white; padding: 1.5vw; border-radius: 5px; font-size: 20px; display:flex; flex-direction: column;">
+                    <p style="font-size:150%; margin-top:0px;">
+                        Web Interface Message Types
+                    </p>
+                    Our web interface will allow an operator at a computer to control all system functions, including
+                    stopping the system in case of
+                    emergency, and overwriting user controls for the purpose of demoing the system to individuals
+                    incapable of operating the controls.
+
+                    <div style="padding-bottom: 2vw;"></div>
+
+                    <div style="padding: auto; align-content:center;">
+                        <table>
+                            <thead>
+                                <div>
+                                    <th class="message-header"> Message Name </th>
+                                    <th class="message-header"> Data type </th>
+                                    <th class="message-header"> Data </th>
+                                    <th class="message-header"> Size </th>
+                                    <th class="message-header"> Sender </th>
+                                    <th class="message-header"> Contents </th>
+                                </div>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="message-content"> Target Rotation </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> [0-90] </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Web </td>
+                                    <td class="message-content"> Reports what aircraft target angle </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Fan Speed Target </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> [0-255] </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Web </td>
+                                    <td class="message-content"> Reports target airspeed </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Reset System </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> 0xAE </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Web </td>
+                                    <td class="message-content"> Commands all systems to clear their data and return to
+                                        starting conditions
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Emergency Stop </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> 0x99 </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> Web </td>
+                                    <td class="message-content"> Orders all hardware to immediately cease function </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> True Airspeed </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> [0-255] </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> System </td>
+                                    <td class="message-content"> Reports true airspeed operator </td>
+                                </tr>
+                                <tr>
+                                    <td class="message-content"> Ready </td>
+                                    <td class="message-content"> uint_8 </td>
+                                    <td class="message-content"> 0x66 </td>
+                                    <td class="message-content"> 8 Bits </td>
+                                    <td class="message-content"> System </td>
+                                    <td class="message-content"> Reports that all boards have completed startup tasks
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </h3>
+            </div>
         </div>
     </div>
 
