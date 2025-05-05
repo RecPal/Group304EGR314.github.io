@@ -6,25 +6,13 @@ body {
   background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(163, 163, 163));
   margin: 0;
   padding: 0;
-  transform: scale(0.8);
   /* 80% of original size */
   transform-origin: top center;
   /* Keeps scaling from affecting alignment */
 }
 
 
-/* Header background image, etc. */
-header {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fd/Atacama_Desert_%28Unsplash%29.jpg");
-  background-position-y: center bottom;
-  color: white;
-  padding: 25px;
-  text-align: center;
-  letter-spacing: 2px;
-  background-attachment: fixed;
-  max-height: 219px;
-  white-space: nowrap;
-}
+
 
 /*--------------------------------
      PAGE FORMATTING

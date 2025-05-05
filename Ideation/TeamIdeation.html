@@ -10,56 +10,12 @@
 
 <body>
 
-    <header>
-
-        <h1 style="text-align:left; padding-left:20px; font-size:80px;">
-            <a href="../index.html" class="title-link">
-                Windsoar: Project Ideation
-            </a>
-        </h1>
-
-        <!-- Engineering Nav -->
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Project Information</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="cancel-pointer">Project Ideation</a></li>
-                        <li><a href="../Requirements/Requirements.html">Requirements</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Hardware Design</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../TeamBlockDiagram/TeamBlockDiagram.html">Block Diagrams</a></li>
-                        <li><a href="#">Mechanical</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Software Design</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Block Diagrams</a></li>
-                        <li><a href="#">Mechanical</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Personal Datasheets</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://recpal.github.io/DomTrusko304.github.io/">Dominick Trusko</a></li>
-                        <li><a href="https://adamjq1.github.io/">Adam Quan</a></li>
-                        <li><a href="https://calewi12.github.io/">Cory Lewis</a></li>
-                        <li><a href="https://emwall527.github.io/emwall.github.io/">Emerson Wall</a></li>
-                    </ul>
-                </li>
-                <li class="right-align"><a href="../TeamInformation/TeamInformation.html">Team Information</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <contentHead> Project Ideation </contentHead>
 
     <contentParagraph>
-        When chosing our team's project we looked at various different options.
+        When choosing our team's project we looked at various different options.
         Our priorities were twofold, ease of manufacturing as well as prioritizing educational
         benefit. It was critically important to our team that we develop a fun and engaging platform
         for students, while not overscoping to the point that we cannot make meaningful progress.
@@ -187,26 +143,31 @@
 
     </contentParagraph>
 
+    <script src="../scripts.js" defer> </script>
+
+    <script>
+        // Get the last modified date
+        let lastModified = new Date(document.lastModified);
+    
+        // Format it to YYYY-MM-DD or any preferred format
+        let formattedDate = lastModified.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+    
+        // Insert the formatted date into the page
+        document.getElementById("last-updated").textContent = formattedDate;
+    
+        function toggleTable(tableId) {
+            var table = document.getElementById(tableId);
+            table.classList.toggle("showContent");
+        }
+    </script>
+
+    
+
 </body>
 
 </html>
 
-<script>
-    // Get the last modified date
-    let lastModified = new Date(document.lastModified);
-
-    // Format it to YYYY-MM-DD or any preferred format
-    let formattedDate = lastModified.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-    });
-
-    // Insert the formatted date into the page
-    document.getElementById("last-updated").textContent = formattedDate;
-
-    function toggleTable(tableId) {
-        var table = document.getElementById(tableId);
-        table.classList.toggle("showContent");
-    }
-</script>
